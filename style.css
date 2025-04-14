@@ -103,13 +103,10 @@ section {
 }
 
 .navbar img {
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
 }
 
-.nav-link a {
-    background-color: green;
-}
 
 .navbar-nav .nav-link {
     font-size: 1.1rem;
@@ -243,7 +240,7 @@ header b {
 }
 
 .form_contact{
-    margin-right: 80px !important;
+    margin-right: 90px !important;
 }
 
 .btn_contact button,
@@ -302,6 +299,12 @@ input[type="number"]::-webkit-outer-spin-button {
     align-items: center;
     flex-direction: column;
     padding: 0 !important;
+}
+
+.footer_logo img{
+    width: 130px !important;
+    height: 130px;
+    margin-bottom: 0;
 }
 
 .footer_media{
