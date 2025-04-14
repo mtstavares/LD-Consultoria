@@ -189,7 +189,7 @@ header b {
     color: var(--alternativa);
 }
 
-.img-fluid {
+.img_about img {
     width: 100%;
 }
 
@@ -337,6 +337,25 @@ input[type="number"]::-webkit-outer-spin-button {
 
 
 /* Medias queries */
+@media (max-width: 1496px) {
+    .img_about img{
+        width: 60%;
+    }
+}
+
+@media (max-width: 1232px) {
+    .img_about img{
+        width: 80%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .img_about img{
+        width: 100%;
+    }
+}
+
+
 @media (max-width: 1250px) {
 
     .btn_contact button {
