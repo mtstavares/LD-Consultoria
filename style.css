@@ -195,7 +195,41 @@ header b {
 #pricing {
     background-color: var(--laranjinha);
     border-radius: 40px;
-    ;
+}
+
+#pricing_mobile{
+    background-color: var(--laranjinha);
+    border-radius: 40px;
+    display: none !important;
+}
+
+.carousel-inner{
+    padding: 60px;
+}
+
+.carousel-item{
+    margin: 0 !important;
+    padding: 0;
+    float: none !important;
+}
+
+.carousel-indicators, 
+.carousel-control-prev,
+.carousel-control-next {
+    color: var(--cinzinha);
+    padding: 0 !important;
+}
+
+.carousel-indicators{
+    width: 20%;
+    margin: 0 auto !important;
+}
+
+.active {
+    width: 100% !important;
+    padding: 0 !important;
+    display: flex;
+    justify-content: center;
 }
 
 .card {
@@ -384,7 +418,12 @@ input[type="number"]::-webkit-outer-spin-button {
 @media (max-width: 550px) {
 
     #pricing {
-        padding: 48px 5px !important;
+        display: none;
+    }
+
+    #pricing_mobile {
+        display: flex !important;
+        padding: 20px 0px;
     }
 
     .card-container {
@@ -407,5 +446,11 @@ input[type="number"]::-webkit-outer-spin-button {
 
     #about{
         padding: 15px 8px !important;
+    }
+}
+
+@media (max-width: 440px) {
+    .carousel-inner{
+        padding: 40px;
     }
 }
