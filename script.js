@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     const message = `Olá Luana, meu nome é ${name}, tenho ${age} anos e meu propósito com a consultoria é: ${proposito}`;
-    const whatsappNumber = "5519996658951"; // seu número
+    const whatsappNumber = "5519997960605"; // seu número
     const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 
     window.open(url, "_blank");
