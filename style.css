@@ -126,6 +126,12 @@ section {
     padding: 0 20px;
 }
 
+.nav-link .active{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Estilização do Header */
 
 
@@ -197,20 +203,25 @@ header b {
     border-radius: 40px;
 }
 
-#pricing_mobile{
+.pricing_mobile{
     background-color: var(--laranjinha);
     border-radius: 40px;
-    display: none !important;
+   
 }
 
 .carousel-inner{
     padding: 60px;
+    overflow: hidden;
+    min-height: 500px;
+    height: auto;
+    min-height: 500px; /* Ajuste conforme seu design */
+   
 }
 
 .carousel-item{
-    margin: 0 !important;
-    padding: 0;
-    float: none !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .carousel-indicators, 
@@ -225,16 +236,13 @@ header b {
     margin: 0 auto !important;
 }
 
-.active {
-    width: 100% !important;
-    padding: 0 !important;
-    display: flex;
-    justify-content: center;
-}
 
 .card {
     border-radius: 40px !important;
     box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.75);
+    width: 100%;
+    max-width: 350px;
+    height: 100%;
 }
 
 .card b {
@@ -418,13 +426,13 @@ input[type="number"]::-webkit-outer-spin-button {
 @media (max-width: 550px) {
 
     #pricing {
-        display: none;
+        display: none !important;
     }
 
-    #pricing_mobile {
+    .pricing_mobile {
         display: flex !important;
-        padding: 20px 0px;
     }
+   
 
     .card-container {
         width: 100% !important;
@@ -449,8 +457,8 @@ input[type="number"]::-webkit-outer-spin-button {
     }
 }
 
-@media (max-width: 440px) {
-    .carousel-inner{
-        padding: 40px;
+@media (max-width: 420px) {
+    #pricing{
+        padding: 20px 30px !important;;
     }
 }
