@@ -42,33 +42,35 @@ h3 {
 
 .fade-in {
     animation: fadeIn 0.5s ease forwards;
-  }
-  
-  .fade-out {
+}
+
+.fade-out {
     animation: fadeOut 0.5s ease forwards;
-  }
-  
-  @keyframes fadeIn {
+}
+
+@keyframes fadeIn {
     from {
-      opacity: 0;
-      transform: translateY(15px);
+        opacity: 0;
+        transform: translateY(15px);
     }
+
     to {
-      opacity: 1;
-      transform: translateY(0);
+        opacity: 1;
+        transform: translateY(0);
     }
-  }
-  
-  @keyframes fadeOut {
+}
+
+@keyframes fadeOut {
     from {
-      opacity: 1;
-      transform: translateY(0);
+        opacity: 1;
+        transform: translateY(0);
     }
+
     to {
-      opacity: 0;
-      transform: translateY(15px);
+        opacity: 0;
+        transform: translateY(15px);
     }
-  }
+}
 
 .active {
     display: flex !important;
@@ -82,7 +84,7 @@ h3 {
     width: 90%;
     border-radius: 40px;
     box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.75);
-    margin: 40px 0;
+    margin: 20px 0;
     background-color: var(--cinzinha);
 }
 
@@ -126,7 +128,7 @@ section {
     padding: 0 20px;
 }
 
-.nav-link .active{
+.nav-link .active {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -203,35 +205,47 @@ header b {
     border-radius: 40px;
 }
 
-.pricing_mobile{
+.pricing_mobile {
     background-color: var(--laranjinha);
     border-radius: 40px;
-   
+
 }
 
-.carousel-inner{
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+#carouselExample {
+    display: none !important;
+}
+
+.carousel-inner {
     padding: 60px;
     overflow: hidden;
     min-height: 500px;
     height: auto;
-    min-height: 500px; /* Ajuste conforme seu design */
-   
+    min-height: 500px;
 }
 
-.carousel-item{
+.carousel-item {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.carousel-indicators, 
+.carousel-indicators,
 .carousel-control-prev,
 .carousel-control-next {
     color: var(--cinzinha);
     padding: 0 !important;
 }
 
-.carousel-indicators{
+.carousel-indicators {
     width: 20%;
     margin: 0 auto !important;
 }
@@ -241,7 +255,7 @@ header b {
     border-radius: 40px !important;
     box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.75);
     width: 100%;
-    max-width: 350px;
+    max-width: 450px;
     height: 100%;
 }
 
@@ -259,13 +273,13 @@ header b {
     background-color: var(--cinzinha);
 }
 
-.img_contact{
+.img_contact {
     padding: 0 !important;
 }
 
 .img_contact img {
     width: 40%;
-    
+
 }
 
 .text_contact h1,
@@ -281,7 +295,7 @@ header b {
     padding: 0 10px;
 }
 
-.form_contact{
+.form_contact {
     margin-right: 90px !important;
 }
 
@@ -335,7 +349,8 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 
-.footer_logo, .footer_media{
+.footer_logo,
+.footer_media {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -343,59 +358,61 @@ input[type="number"]::-webkit-outer-spin-button {
     padding: 0 !important;
 }
 
-.footer_logo img{
+.footer_logo img {
     width: 130px !important;
     height: 130px;
     margin-bottom: 0;
 }
 
-.footer_media{
+.footer_media {
     margin-right: 50px;
 }
 
-#footer h3, #footer p, #footer a{
+#footer h3,
+#footer p,
+#footer a {
     color: var(--pretinho);
     text-align: center;
 }
 
-.social_media_icons .fa-instagram{
-    color: #E1306C; 
+.social_media_icons .fa-instagram {
+    color: #E1306C;
     font-size: 2rem;
     transition: transform 0.3s ease;
 }
 
-.social_media_icons .fa-instagram:hover{
+.social_media_icons .fa-instagram:hover {
     transform: scale(1.1);
-    color: #833AB4; 
+    color: #833AB4;
 }
 
-.social_media_icons .fa-whatsapp{
-    color: #128C7E; 
+.social_media_icons .fa-whatsapp {
+    color: #128C7E;
     font-size: 2rem;
     transition: transform 0.3s ease;
 }
 
-.social_media_icons .fa-whatsapp:hover{
+.social_media_icons .fa-whatsapp:hover {
     transform: scale(1.1);
-    color: #25D366; 
+    color: #25D366;
 }
 
 
 /* Medias queries */
 @media (max-width: 1496px) {
-    .img_about img{
+    .img_about img {
         width: 60%;
     }
 }
 
 @media (max-width: 1232px) {
-    .img_about img{
+    .img_about img {
         width: 80%;
     }
 }
 
 @media (max-width: 1024px) {
-    .img_about img{
+    .img_about img {
         width: 100%;
     }
 }
@@ -412,6 +429,8 @@ input[type="number"]::-webkit-outer-spin-button {
     .img_contact {
         display: none;
     }
+
+   
 }
 
 
@@ -425,18 +444,23 @@ input[type="number"]::-webkit-outer-spin-button {
 
 @media (max-width: 550px) {
 
+    #carouselExample {
+        display: block !important;
+    }
+
+    .container {
+        margin: 2px 0;
+    }
+
     #pricing {
         display: none !important;
     }
 
-    .pricing_mobile {
-        display: flex !important;
-    }
-   
 
     .card-container {
         width: 100% !important;
         padding: 0 !important;
+
     }
 
     #pricing .card {
@@ -448,17 +472,18 @@ input[type="number"]::-webkit-outer-spin-button {
         padding: 40px 15px;
     }
 
-    #inicio{
+    #inicio {
         padding: 10px 8px !important;
     }
 
-    #about{
+    #about {
         padding: 15px 8px !important;
     }
 }
 
 @media (max-width: 420px) {
-    #pricing{
-        padding: 20px 30px !important;;
+    #pricing {
+        padding: 20px 30px !important;
+        ;
     }
 }
