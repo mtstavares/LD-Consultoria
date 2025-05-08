@@ -450,7 +450,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
     #container {
         width: 99%;
-        margin: 8px 0;
+        margin: 1px 0;
     }
 }
 
@@ -460,9 +460,7 @@ input[type="number"]::-webkit-outer-spin-button {
         display: block !important;
     }
 
-    .container {
-        margin: 2px 0;
-    }
+    
 
     #pricing {
         display: none !important;
